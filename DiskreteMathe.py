@@ -1,3 +1,8 @@
+# Andreas Ly
+# Robin Rudolf
+# Timmy Pfau
+# Sascha Villing
+
 import hashlib
 import itertools
 import string
@@ -9,8 +14,8 @@ allChars = letters + digits
 def brute_force_system1():
     for o in itertools.product(allChars, repeat=5):
         input = "".join(o)
-        print(input + "   " + hash)
         hash = hashlib.sha1(input.encode('utf-8')).hexdigest()
+        print(input + "   " + hash)
         if hash == "5aea476328379d3bff2204501bb57aa8b4268fac":
             print("INPUT: ", input)
             return input
@@ -35,22 +40,14 @@ def brute_force_system3():
                 print("INPUT: ", input)
                 return input
 
-
-def brute_force_system4():
-    for len in range(1, 4):
-        for o in itertools.product(allChars, repeat=len):
-            input = "".join(o)
-            hash = hashlib.sha1(input.encode('utf-8')).hexdigest()
-            print(input + "   " + hash + "     ")
-            if hash == "7e240de74fb1ed08fa08d38063f6a6a91462a815":
-                print("INPUT: ", input)
-                return input
-
-#Ergebnis System1 INPUT = X42a0
-#brute_force_system1()
-
-#Ergebnisse für System 2 & 3 konnten nicht berechnet werden,
-#weil die Zeit zu lange dauert. 
+brute_force_system1()
 brute_force_system2()
-#brute_force_system3()
-#brute_force_system4()
+brute_force_system3()
+
+# Ergebnis System1 INPUT = X42a0
+# Ergebnisse für System 2 & 3 konnten nicht berechnet werden,
+# weil der Input zu lang ist und deswegen zu viel Zeit braucht. 
+# Bei dem schnellsten Computer von uns hat die Berechnung für System 1 bereits 3 Stunden gedauert und das bei 62^5 Möglichkeiten (916.132.832)
+# System2 hat 62^10 Möglichkeiten (839.299.365.868.340.224). 
+# System3 hat 62^5 + 62^6 + 62^7 + 62^8 + 62^9 + 62^10 verschiedene Möglichkeiten (853.058.371.851.163.296).
+# Dies mit einem normalen Computer zu berechnen würde praktisch Jahre dauern.
