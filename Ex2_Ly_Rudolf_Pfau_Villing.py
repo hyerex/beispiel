@@ -48,6 +48,10 @@ brute_force_system3()
 # Ergebnisse für System 2 & 3 konnten nicht berechnet werden,
 # weil der Input zu lang ist und deswegen zu viel Zeit braucht. 
 # Bei dem schnellsten Computer von uns hat die Berechnung für System 1 bereits 3 Stunden gedauert und das bei 62^5 Möglichkeiten (916.132.832)
+#
 # System2 hat 62^10 Möglichkeiten (839.299.365.868.340.224). 
+# System2 durchlief bereits 14 Stunden und man ist erst bei aaaacHt2ga gelandet.
+#
 # System3 hat 62^5 + 62^6 + 62^7 + 62^8 + 62^9 + 62^10 verschiedene Möglichkeiten (853.058.371.851.163.296).
+# System3 durchlief auf einem anderen PC 20 Stunden und man ist bei aaaapF2EAn gelandet.
 # Dies mit einem normalen Computer zu berechnen würde praktisch Jahre dauern.
