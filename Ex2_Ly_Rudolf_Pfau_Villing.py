@@ -46,7 +46,7 @@ brute_force_system3()
 
 # Ergebnis System1 INPUT = X42a0
 # Ergebnisse für System 2 & 3 konnten nicht berechnet werden,
-# weil der Input zu lang ist und deswegen zu viel Zeit braucht. 
+# weil der Input viel zu lang ist und deswegen zu viel Zeit braucht.
 # Bei dem schnellsten Computer von uns hat die Berechnung für System 1 bereits 3 Stunden gedauert und das bei 62^5 Möglichkeiten (916.132.832)
 #
 # System2 hat 62^10 Möglichkeiten (839.299.365.868.340.224). 
